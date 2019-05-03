@@ -1,0 +1,135 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial Black;
+}
+/* Content */
+
+#menuContent #menuClose {
+    position: fixed;
+    z-index:2001;
+    top: 20px;
+    right: 70px;
+    color: white;
+    font-size:2em;
+    transition:.2s ease-in-out;
+    cursor: pointer;
+}
+
+#menuContent h1 {
+    padding-bottom:20px;
+    text-transform: uppercase;
+    color: #33346D;
+    text-align: center;
+}
+
+.steps h2 {
+    background-color: white;
+    color: #33346D;
+    text-align: center;
+    font-size: 30px;
+    padding-top:8px;
+    margin:0px 20px 0px 0px;
+    width:50px;
+    height:50px;
+    border-radius: 50px;
+    
+}
+
+.steps h3{
+    color:white;
+    position: relative;
+    top:-10px;
+    text-transform: uppercase;
+}
+
+.inst {
+    width:120%;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    display:inline-flex;
+    justify-content: flex-start;
+}
+
+.content{
+    width:100%;
+    text-align:left;
+    margin-top:30px;
+    margin-left:40px;
+    border: 0.3vw black solid;
+    padding: 1vw;
+}
+
+.content input{
+    width:90%;
+}
+
+input[name='date']{
+    width:150px;
+    text-align:center;
+}
+
+input[name='price'], input[name='donate'], textarea[name='org']{
+    width:130px;
+}
+
+textarea[name='desc']{
+    width:80%;
+    resize:none;
+}
+
+.steps {
+    display: flex;
+    
+}
+
+.calendar {
+    margin: 14%;
+}
+
+.drop {
+    border: 5px solid white;
+    color: #33346D;
+}
+
+.img-window{
+    position:absolute;
+    z-index:2000;
+    background-color:white;
+    top:0;
+    width:800px;
+    height:500px;
+}
+
+.close {
+    text-decoration: none;
+}
+
+.impt{
+    color:red;
+}
+
+.btn {
+    border: 0.2vw black solid!important;
+    padding: 1.2vw 1.7vw;
+    letter-spacing: 2vw;
+    text-transform: uppercase;
+    font-weight: 700!important;
+    font-size: 1.3vw;
+    text-align: center;
+    background-color: #ffb1cc;
+    float: right;
+    margin-top: 8vw;
+}
+
+.btn:hover {
+    background-color: black!important;
+    color: #ffb1cc!important;
+}
+
+fieldset {
+    border: 0.15vw black solid!important;
+    height: 80%;
+    padding: 2vw;
+}

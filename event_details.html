@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Event Information</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/event_details.css" rel="stylesheet">
+        <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"
+        >
+        <link href="css/style.css" rel="stylesheet">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="https://apis.google.com/js/platform.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        
+    </head>
+    
+    <body>
+        <div class="nav home navbar-fixed-top">
+            <span id="menu">
+                <ul>
+                    <li><a class="scroll-menu" href="index.html#home">Home</a></li>
+                    <li><a class="scroll-menu events" href="index.html#events">Events</a></li>
+                    <li><a class="scroll-menu sign-in" href="signup.html">Sign In</a></li>
+                </ul>
+            </span>
+            <ul id="top-menu">
+                <li><a href="#free">Free Events</a></li>
+                <li><a href="#science">Science &amp; Technology Events</a></li>
+                <li><a href="#health">Health &amp; Wellness Events</a></li>
+                <li><a href="#business">Business Events</a></li> 
+                <li><a href="#fb">F&amp;B Events</a></li>
+                <li><a href="#music">Music Events</a></li> 
+                <li><a href="#popular">Popular Events</a></li>
+            </ul>
+        </div>
+
+        
+        <div id="evDetails" class="container-fluid">
+           <div class="row">
+            <div class="col-sm-4">
+                <img src="" class="img" width="400">
+            </div>       
+        
+            <div class="col-sm-4 txt">
+              <label id="events">Title</label>
+               <h1 id="event-title">Event Title</h1>
+               <label id="events">Description</label>
+                <p id="desc"></p>
+                <label id="events">Event Type</label>
+                <p id="type"></p>
+                <div id="dates">
+                   <label id="events">from</label>
+                    <div id="start">December 31 | 1200-2000</div><br>
+                    <label id="events">to</label>
+                    <div id="end"><p></p>December 31 | 1200-2000</div><br>
+                </div>
+                <br>
+                <button>Sign up</button>
+                <br>
+            </div>
+            <div class="col-sm-3">
+                <label id="events">Location</label>
+                <div id="map"></div>
+                <br>
+                <label id="events">have a google account? </label>
+                <br><br>
+                <button id="authorize_button" style="display: none;">Add To Calendar</button>
+
+                <pre id="content" style="display: none;"></pre>
+            </div>
+            </div>
+        </div>
+        
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </footer>
+        <script src="js/calendar.js"></script>
+        <script async defer src="https://apis.google.com/js/api.js"
+          onload="this.onload=function(){};handleClientLoad()"
+          onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+    </body>
+</html>

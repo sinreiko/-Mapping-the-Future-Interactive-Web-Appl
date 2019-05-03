@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign Up</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link href="css/signup.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/registration.js"></script>
+
+    </head>
+    
+    <body>
+        <div class="nav">
+           <span id="menu">
+               <ul>
+               <li><a class="scroll-menu" href="index.html#home">Home</a></li>
+               <li >
+                    <a class="scroll-menu" href="index.html#events">Events</a>
+                </li>
+                <li><a  class="scroll-menu active" href="signup.html">Sign In</a></li>
+               </ul>
+           </span>
+        </div>
+        <div class="col-sm-10">
+        <div class="signup col-sm-6">
+            <form>
+                <fieldset>
+                    <h2>Create a New Account</h2><br>
+                    Username:<br>
+                    <input id="username" type="text" name="username" placeholder="Enter your username"><br><br>
+                    <p class="user error"></p>
+                    <br>
+                    
+                    Email:<br>
+                    <input id="email" type="email" name="email" placeholder="Enter your email" required><br><br>
+                    <p class="email error"></p>
+                    <br>
+                    Password:<br>
+                    <input id="password" type="password" name="password" placeholder="Enter your password" required><br><br>
+                    <p class="pass error"></p>
+
+                    Confirm Password:<br>
+                    <input type="password" id="cnfmPassword" name="cnfmPassword" placeholder="Confirm your password" required><br>
+                    <p class="cnfmPass error"></p>
+                    <br><br>
+
+                    <button type="button" class="btn" id="signup"><span>Confirm</span></button>
+                </fieldset>
+            </form>
+        </div>
+        <div class="sign-in col-sm-4">
+           <form>
+                <fieldset>
+                    <h2>Sign in here</h2><br>
+                    Username/Email:<br>
+                    <input id="userLogin" type="text" name="userLogin" placeholder="Enter your username"><br><br>
+                    
+                    Password:<br>
+                    <input id="pwLogin" type="password" name="pwLogin" placeholder="Enter your password" required><br><br>
+                    
+                    <button type="button" class="btn" id="login"><span>Confirm</span></button>
+                </fieldset>
+            </form>
+        </div>
+        </div>
+    </body>
+</html>

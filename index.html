@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/createEvn.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/bootstrap-datetimepicker.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/bootstrap-datetimepicker.min.js"></script>
+        <script src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <!--  home page -->
+        <div class="nav home navbar-fixed-top">
+            <span id="menu">
+                <ul>
+                    <li><a class="scroll-menu active" href="#home">Home</a></li>
+                    <li><a class="scroll-menu events" href="#events">Events</a></li>
+                    <li><a class="scroll-menu sign-in" href="signup.html">Sign In</a></li>
+                </ul>
+            </span>
+            <ul id="top-menu">
+                <li><a href="#free">Free Events</a></li>
+                <li><a href="#science">Science &amp; Technology Events</a></li>
+                <li><a href="#health">Health &amp; Wellness Events</a></li>
+                <li><a href="#business">Business Events</a></li> 
+                <li><a href="#fb">F&amp;B Events</a></li>
+                <li><a href="#music">Music Events</a></li> 
+                <li><a href="#popular">Popular Events</a></li>
+            </ul>
+        </div>
+        
+        <div id="home" class="section homePage">
+            <div class="txt">
+                <h1>Events</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <button>Learn more</button>
+            </div>
+        </div>
+        <!--  end of home page-->
+        <!--   create event -->
+        <button id="create-events">+</button>
+        <div id="menuContent" class="container-fluid">
+            <div id="menuClose">✕</div>
+            <h1>create an event</h1>
+            <div class="steps row">
+                <form>
+                <div class="col-sm-4">
+                    <div class="inst">
+                        <h2>1</h2>
+                        <h3>Event Details</h3>
+                    </div>
+                    
+                    <div class="content">
+                       <label>Event image<span class="impt">*</span></label><br>
+                        <input type="file" id="imgUpload" accept="image/*" class="required">
+                        <img src="" id="blah" height="100"><br><br>
+                        <label>Event Title<span class="impt">*</span></label><br>
+                        <input type="text" name="title" class="required"><br><br>
+                        <label>Description<span class="impt">*</span></label><br>
+                        <textarea name="desc" class="required" placeholder="Enter description (max 500 char)" maxlength="500" size="1200" rows="6"></textarea><br><br>
+                        <label>Location<span class="impt">*</span></label><br>
+                        <input type="text" name="address" class="required"><br><br>
+                        
+                        </div>
+                        
+                    </div>
+        
+                <div class="col-sm-4">
+                    <div class="inst">
+                        <h2>2</h2>
+                        <h3>Create Tickets</h3>
+                    </div>
+                    <div class="content">
+                       <label for="ticket">Ticket Type<span class="impt">*</span></label><br>
+                        <select name="ticket" class="drop required">
+                            <option value="free">Free Ticket</option>
+                            <option value="paid">Paid Ticket</option>
+                            <option value="donation">Donation</option>
+                        </select>
+                    </div>
+                
+                    
+                </div>
+            
+                <div class="col-sm-4">
+                <div class="inst">
+                    <h2>3</h2>
+                    <h3>Additional Details</h3>
+                </div>
+                
+                <div class="content">
+                        <label for="event">Event Type<span class="impt">*</span></label><br>
+                           <select name="event" class="drop required">
+                            <option value="Popular">Popular Singapore Events</option>
+                            <option value="Music">Music Events</option>
+                            <option value="F&D">Food and Drink Events</option>
+                            <option value="Business">Business and Professional Events</option>
+                            <option value="Health">Health and Wellness Events</option>
+                            <option value="Science">Science and Technology Events</option>
+                            <option value="Free">Free Events</option>
+                        </select>
+                        <br><br>
+                        <fieldset>
+                                      <label>Start date</label>
+                                      <div class="input-append date start"><input id="start_date" size="16" type="type" readonly>
+                                      <span class="add-on"><i class="icon-th"></i></span>
+                                        </div>
+                                      <label>End date</label>
+                                      <div class="input-append date end"><input id="end_date" size="16" type="type" readonly>
+                                      <span class="add-on"><i class="icon-th"></i></span>
+                                    </div>
+                        </fieldset>
+                        <br>
+                        <label for="organiser">Organised by</label>
+                        <textarea type="text" name="org"></textarea>
+                    </div>
+                    <button type="button" class="btn" id="btn-create">Create</button>
+                </div>
+                </form>   
+            </div>
+        </div>
+            <!--  end of create event -->
+       
+        <div id="events" class="section">
+        <div id="popular" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(images/kayak.gif), rgba(0,0,0,0.5);background-position: center" alt="Kayak">
+                    <p>Kayaking</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/cycling.gif);background-position: center" alt="Cycling">
+                     <p>Cycling</p>
+                 </div>
+                    
+                 <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hiking.gif);background-position: center" alt="Hiking">
+                    <p>Hiking</p>
+                 </div>
+             </div>
+                
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/music.gif);background-position: center" alt="Music">
+                    <p>Guitar Club</p>
+                </div>
+
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/photography.gif)" alt="Photography">
+                    <p>Photography</p>
+                </div>
+
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/sports.gif);background-position: center" alt="Sports">
+                    <p>Sports</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="music" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/music.gif);background-position: center" alt="Guitar">
+                    <p>Guitar Club</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0)), url(images/microphone.gif);background-position: center" alt="Microphone">
+                    <p>Singing Contest</p>
+                 </div>
+            </div>  
+        </div>
+        
+        <div id="fb" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/eating%20contest.gif);background-position: center" alt="Sausage">
+                    <p>Eating Contest</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/baking.gif);background-position: center" alt="Baking">
+                     <p>Baking Contest</p>
+                </div>
+            </div>
+        </div>
+            
+        <div id="business" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(images/handshake.gif);background-position: center" alt="Handshake">
+                    <p>Start-up Convention</p>
+                </div>
+            </div>
+        </div>
+            
+        <div id="health" class="container">
+            <div class="row">
+                <div class="col-sm-4 img"   style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/cycling.gif);background-position: center" alt="Cycling">
+                    <p>Cycling</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/hiking.gif);background-position: center" alt="Hiking">
+                    <p>Hiking</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.3)), url(images/kayak.gif);background-position: center" alt="Kayak">
+                    <p>Kayaking</p>
+                </div>
+            </div>
+            
+            <div class="row" class="container">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/sports.gif);background-position: center" alt="Sports">
+                    <p>Sports</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="science" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(images/robot.gif);background-position: center" alt="Robot">
+                    <p>Robotics</p>
+                </div>
+                    
+                    <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/microscope.gif);background-position: center" alt="Biology">
+                    <p>Biology</p>
+                </div>
+                    
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(images/physics.gif);background-position: center" alt="Physics">
+                    <p>Physics</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="free" class="container">
+            <div class="row">
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/photography.gif);background-position: center" alt="Photgraphy">
+                    <p>Photography</p>
+                </div>
+                
+                <div class="col-sm-4 img" style="background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/book.gif);background-position: center" alt="Books">
+                    <p>Literature</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+            <a href="#"><i class="fa fa-facebook-official"></i></a>
+            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-flickr"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+        </footer>
+    </body>
+</html>

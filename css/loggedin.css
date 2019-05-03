@@ -1,0 +1,155 @@
+body {
+    margin:0;
+    padding:0;
+    font-family: Arial Black;
+    overflow:hidden;
+}
+
+
+/* nav */
+.nav a {
+    display: block;
+    float: right;
+    text-align: center;
+    padding: 30px 10px;
+    text-decoration: none;
+    color: black;
+    
+}
+
+.active {
+    background-color: #33346D;
+    color: white;
+}
+
+
+.nav a:hover {
+    background-color: #33346D;
+    color: white;
+}
+
+
+/* Content */
+
+.logged {
+    background-color: #33346D;
+    position:relative;
+    top:-4em;
+    padding: 85px;
+    margin-right:170px;
+    height:1000px;
+}
+
+h1 {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 70px;
+    margin: 0px;
+}
+
+.profile {
+    margin-top:10px;
+    text-align: center;
+    border: 10px white solid;
+    display: inline-block;
+    height: 400px;
+    width: 350px;
+    vertical-align: middle;
+}
+
+.profileimg {
+    width: 80%;
+    height: 70%;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+.name{
+        font-size: 30px;
+        text-align:center;
+        color: white;
+        display:flex;
+        justify-content: center;
+
+}
+button {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.evnt, .upcoming, .acc {
+    text-transform: uppercase;
+    color: #33346D;
+    letter-spacing: 3px;
+    width:600px;
+    position: relative;
+
+}
+
+.evnt{
+    padding: 20px;
+    background-color: #FFB1E2;
+
+}
+
+.upcoming {
+    background-color: #CAF1FB;
+    padding: 20px 60px;
+    margin-left:150px;
+}
+
+.acc {
+    background-color: #FFE1B1;
+    padding: 20px;
+    margin-right: 350px;
+}
+
+.btn {
+    margin-top:30px;
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-gap: 70px;
+    float: right;
+    width: 700px;
+}
+
+
+.appear{
+    animation: pink 1s ease-in 0.5s;
+}
+
+@keyframes pink {
+    from {display:none; background-color:rgba(255, 177, 226,0); color:rgba(51, 52, 109,0); border-color:#33346D; right: -200px;}
+    to {display:block; background-color: rgba(255, 177, 226,1); color:rgba(51, 52, 109,1); border-color: white; right: 0px;}
+}
+
+.blue{
+    animation: blue 1s ease-in 1s;
+}
+
+@keyframes blue {
+    from {display:none; background-color:rgba(202, 241, 251,0); color:rgba(51, 52, 109,0); border-color:#33346D; right: -200px;}
+    to {display:block; background-color: rgba(202, 241, 251,1); color:rgba(51, 52, 109,1); border-color: white; right: 0px;}
+}
+
+.yellow{
+    animation: yellow 1s ease-in 1.5s;
+}
+
+@keyframes yellow {
+    from {display:none; background-color:rgba(255, 225, 177,0); color:rgba(51, 52, 109,0); border-color:#33346D; right: -200px;}
+    to {display:block; background-color: rgba(255, 225, 177,1); color:rgba(51, 52, 109,1); border-color: white; right: 0px;}
+}
+
+h1{
+    animation: hello 1s ease-in;
+}
+
+@keyframes hello {
+    from {color:rgba(51, 52, 109,1)}
+    to {color: white}
+}
+
+    
+    
